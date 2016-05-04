@@ -11,4 +11,5 @@ zieleni hodowanej w domu. Miało by to polegać na wysyłaniu sygnału z czujnik
 powiadomienia właściciela do zajęcia się roślinami poprzez e-mail czy SMS. Możliwości przedstawionego pomysłu są bardzo szerokie i pozostawiają duże pole do popisu z obszaru "Internet of things".
 
 ## SŁOWA KLUCZOWE
-"dom inteligentny" "inteli home" "internet of things" "arduino" "dom XXI wieku" "dom multimedialny" "zdalne zarządzanie" "technihouse" "remote homestead" "zdalny dom" "smarthome" "sterowany dom" "zakodowany dom"
+"dom inteligentny" "inteli home" "internet of things" "arduino" "dom XXI wieku" "dom multimedialny" "zdalne zarządzanie" "technihouse" "remote homestead" "zdalny dom" "smarthome" "sterowany dom" "zakodowany dom"  
+**moje propozycje pp**: inteligentny dom, internet rzeczy, internet of things, nfc, iot, security iot, wearables, smart clothes, raspberry pi, arduino, mikrokontrolery, avr
