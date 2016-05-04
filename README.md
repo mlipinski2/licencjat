@@ -12,4 +12,4 @@ powiadomienia właściciela do zajęcia się roślinami poprzez e-mail czy SMS. 
 
 ## SŁOWA KLUCZOWE
 "dom inteligentny" "inteli home" "internet of things" "arduino" "dom XXI wieku" "dom multimedialny" "zdalne zarządzanie" "technihouse" "remote homestead" "zdalny dom" "smarthome" "sterowany dom" "zakodowany dom"  
-**moje propozycje pp**: inteligentny dom, internet rzeczy, internet of things, nfc, iot, security iot, wearables, smart clothes, raspberry pi, arduino, mikrokontrolery, avr
+**moje propozycje pp**: inteligentny dom, internet rzeczy, internet of things, nfc, iot, security iot, wearables, wearable technology, smart clothes, raspberry pi, arduino, mikrokontrolery, avr
