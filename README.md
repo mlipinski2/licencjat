@@ -1,4 +1,4 @@
-# Inteli HOME
+# Internet Rzeczy i kierunki jego wykorzystania
 Praca licencjacka
 
 ## WSTĘP
