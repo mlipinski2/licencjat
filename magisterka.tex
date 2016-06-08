@@ -1,0 +1,156 @@
+\documentclass[brudnopis]{xmgr}
+% Jeśli nowe rozdziały mają się zaczynać na stronach
+% nieparzystych:
+%\documentclass[openright]{xmgr}
+
+%\defaultfontfeatures{Scale=MatchLowercase}
+%\setmainfont[Numbers=OldStyle,Ligatures=TeX]{Minion Pro}
+%\setsansfont[Numbers=OldStyle,Ligatures=TeX]{Myriad Pro}
+% for fontspec version < 2.0
+\setmainfont[Numbers=OldStyle,Mapping=tex-text]{Arial}
+\setsansfont[Numbers=OldStyle,Mapping=tex-text]{Arial}
+%\setmonofont[Scale=0.75]{Monaco}
+
+% Opcjonalnie identyfikator dokumentu
+% drukowany tylko z włączoną opcją 'brudnopis':
+\wersja   {wersja wstępna [\ymdtoday]}
+
+\author   {Michał Lipiński}
+\nralbumu {105229}
+\email    {michal@twoj.cloud}
+
+\author   {Mariusz Piątek}
+\nralbumu {205176}
+\email    {mariusz.piatek92@gmail.com}
+
+\author   {Paweł Ponieważ}
+\nralbumu {228254}
+\email    {p.poniewaz@o2.pl}
+
+\title    {Dom Przyszłości w kontekście Internetu rzeczy}
+\date     {2016}
+\miejsce  {Gdańsk}
+
+\opiekun  {dr Włodzimierz Bzyl}
+
+% dodatkowe polecenia
+%\renewcommand{\filename}[1]{\texttt{#1}}
+%\definecolor{stress}{cmyk}{0,1,0.13,0} % RubineRed
+%\definecolor{topic}{cmyk}{0.98,0.13,0,0.43} % MidnightBlue
+
+\begin{document}
+
+% streszczenie
+\begin{abstract}
+  Celem tej pracy było udowodnienie, że idea Inteligentnego Domu już dawno przestała być czymś ekskluzywnym, zarezerwowanym dla najbogatszych a stała się czymś dużo bardziej przystępnym. Niewielkim lub czasem nawet zerowym kosztem można zaimplementować w swoim domu rozwiązania, które w znacznym stopniu ułatwią funkcjonowanie w nim. W niniejszej pracy udało nam się potwierdzić tę tezę. Udało nam się stworzyć kilka komponentów, które w połączeniu tworzą Inteligentny Dom.
+
+Pierwszym komponentem była stacja meteorologiczna. Do jego funkcjonowania potrzebny był komputer Arduino oraz sensor temperatury i wilgotności powietrza. Takie informacje mogą być przekazywane na dowolne urządzenie i można z nich korzystać cały czas. Kolejnym elementem naszego „Inteligentnego Domu na każdą kieszeń” jest system monitoringu. Udało nam się przy pomocy 2 starych telefonów z aparatem i laptopa stworzyć system nadzoru domowego. Przy pomocy frameworka Meteor oraz modułu node-cam, zabezpieczając wszystko modułem basic-auth osiągnęliśmy zerowym kosztem rozwiązania porównywalne do dostępnych na rynku komercyjnych solucji. Następnie, również niewielkim kosztem, stworzyliśmy system inteligentnych świateł. Zamówione z serwisu AliExpress sterowniki sterowane za pomocą aplikacji Magic Home umożliwiły sterowanie oświetleniem w sposób niemożliwy do osiągnięcia stosując tradycyjne rozwiązania. Możemy nie tylko sterować oświetleniem z poziomu aplikacji na telefon ale również ustawiać czasowe przełączniki, sterować światłem klaśnięciem dłoni czy włączyć tryb muzyki, w którym oświetlenie pulsuje w rytm aktualnie słuchanego utworu. Możemy przyciemnić światło bez wychodzenia z łóżka – jest to coś, co do niedawna mogliśmy oglądać tylko w filmach.
+
+Rozwój technologiczny postępuje w coraz bardziej przyspieszającym tempie. Najlepiej dostrzec to na przykładach, i właśnie nasza praca ma na celu zobrazowanie tego zjawiska. Inteligentny Dom nie musi być drogi, i udało nam się to udowodnić naszymi praktycznymi rozwiązaniami.
+\end{abstract}
+
+% słowa kluczowe
+\keywords{dom inteligentny, zdalny dom, inteli home, internet of things, arduino, dom XXI wieku, dom multimedialny, zdalne zarządzanie,  mikrokontrolery, sterowany dom, zakodowany dom, internet rzeczy, technihouse, remote homestead, smarthome, nfc, iot, security iot, wearables, wearable technology, smart clothes, raspberry pi, arduino, avr, LED strips}
+
+% tytuł i spis treści
+\maketitle
+% wstęp
+\introduction
+
+Internet jest znany na całym świecie, przeciętnemu użytkownikowi kojarzy się on z siecią komputerów, które są ze sobą połączone. Dziś internet oznacza dużo więcej niż tylko komputery, przy których siedzą ludzie. Coraz częściej to również urządzenia i maszyny, z których każdy na co dzień korzysta. Takie połączenia miliardów różnych czujników, komputerów i urządzeń uruchamiających, są dużą zmianą w życiu nas wszystkich, dlatego też często mówi się o tym jako o kolejnej rewolucji internetowej. 
+Termin \emph{„Internet rzeczy”} z ang. \emph{„Internet of Things”}, w skrócie \emph{IoT}, to koncepcja stworzona prze \emph{Kevina Ashtona}. Można ja tłumaczyć na wiele różnych sposobów, natomiast najlepiej określa się ją jako ekosystem, w którym przedmioty, dzięki wyposażeniu w sensory, komunikują się z komputerami. Dla wielu ludzi to nadal coś niewyobrażalnego, ale niedługo w jedną sieć będzie połączone ze sobą praktycznie wszystko. Wiele nowych możliwości staje otworem dla ludzi, którzy zajmują się marketingiem i komunikacją, lecz nie tylko. 
+
+Tematem naszej pracy jest Inteligentny Dom z wykorzystaniem Internet of Things. Celem niniejszej pracy jest przybliżenie tematyki Inteligentnego domu oraz obalenie mitu, że owe rozwiaząnie musi być kosztownym i skomplikowanym do zaimplementowania, przy użyciu Internet of Things. Inteligentny Dom to określenie, które mówi o bardzo zaawansowanym technicznie budynku. Nie zawsze jest to budynek mieszkalny, mogą to być także  biura, firmy czy hale produkcyjne. 
+Inteligentny budynek charakteryzuje się posiadaniem dużej ilości detektorów i czujników, zamieszczonych w ścianach, podłodze czy przy suficie. Wszystkie instalacje połączone ze sobą, tworzą jeden zintegrowany system zarządzania budynku. Systemy te pozwalają na to, aby budynek mógł reagować na zmiany środowiska. Wszystkie te działania maksymalizują komfort użytkowania, funkcjonalność oraz bezpieczeństwo. Dzięki nim możemy także zaoszczędzić energię czy wodę, zmniejszają więc koszty eksploatacji, a także pozwalają na zmniejszenie emisji zanieczyszczeń do środowiska. 
+Podstawę do napisania pracy stanowił projekt, na który wpał moj kolega (\emph{www.windfreaks.pl}) budowy kilku stacji pogodowych oraz kamer HD rozciągniętych wzdłóż wybrzeża oraz półwyspu Helskiego. Projekt miał wspierać naszą pasję jaką jest kiteboarding i dostarczać rzetelnych danych pogodowych . Również jednym z głównych źródeł była książka Michaela Millera pt. „The Internet of Things: How Smart TVs, Smart Cars, Smart Homes, and Smart Cities Are Changing the World”, z której dowiedzieliśmy się w jaki sposób połączone urządzenia mogą poprawić nasze życie prywatne, a także prowadzony biznes, co się dzieje z danymi gromadzonymi w sieci, czy można dzięki niemu zdrowiej żyć czy oszczędzać energię, oraz jakie zagrożenia niesie za sobą IoT. Ważną rolą w przygotowaniu pracy był raport „Internet Rzeczy w Polsce” oraz książka „Internet rzeczy, Bezpieczeństwo w Smart City”, wydawnictwa C.H. Beck. 
+Praca składa się ze wstępu, trzech rozdziałów merytorycznych oraz zakończenia. Wstęp zawiera ogólny opis problematyki pracy. Pierwszy rozdział to bardziej szczegółowy opis terminu „Inteligentny dom” oraz „Internet of Things”, jego korzyści i wyzwania oraz prywatność w Internecie Rzeczy. Drugi rozdział to wgłębienie się w temat odpowiedniego nawodnienia roślin ogrodowych poprzez użycie IoT.  W trzecim rozdziale przedstawione zostało szeroko rozwinięte zarządzanie bezpieczeństwem w budynkach.
+
+\chapter{Internet rzeczy}
+
+
+\begin{itemize}
+\item
+bulet
+\item
+bulet2
+\item
+bulet3
+\end{itemize}
+
+
+
+\section{Informacje ogólne o Internetu rzeczy}
+
+
+\section{Warunki istnienia IoT}
+
+
+\section{Korzyści wynikające z wykorzystania internetu rzeczy}
+
+
+\chapter{Kierunki rozwoju Internetu Rzeczy}
+
+
+\section{Warunki rozwoju IoT}
+
+
+
+\section{Idea rozwoju Internetu Rzeczy}
+
+
+
+\section{Wykorzystanie IoT w zyciu codziennym}
+
+
+\section{Wearables, RTV/AGD}
+
+\section{Inteligetny Dom}
+
+\section{Zagrożenia płynące z rozwoju IoT}
+
+
+\chapter{Praktyczne wykorzystanie inteligentnych rzeczy}
+
+
+\section{Wykorzystanie Arduino przy budowaniu własnych projektów}
+
+
+\section{Inteligentny Dom w praktyce – przykładowe projekty}
+
+
+\section{Stacja Meteorologiczna}
+
+
+\section{Sterowanie oświetleniem}
+
+\section{Zarządzanie bezpieczeństwem}
+
+
+
+% zakończenie
+\summary
+
+
+% załączniki (opcjonalnie):
+\appendix
+\chapter{Tytuł załącznika jeden}
+
+Treść załącznika jeden.
+
+\chapter{Tytuł załącznika dwa}
+
+Treść załącznika dwa.
+
+% literatura (obowiązkowo):
+\bibliographystyle{unsrt}
+\bibliography{xml}
+
+% spis tabel (jeżeli jest potrzebny):
+\listoftables
+
+% spis rysunków (jeżeli jest potrzebny):
+\listoffigures
+
+\oswiadczenie
+
+\end{document}
