@@ -3,42 +3,86 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.aux
 The style file: unsrt.bst
 Database file #1: ../xml.bib
-I was expecting a `,' or a `}'---line 81 of file ../xml.bib
+I was expecting a `,' or a `}'---line 80 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 88 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 96 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 104 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 112 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 120 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 128 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in Gfk:2015:CMC
 Warning--empty journal in Nsr:2015:CMC
-You've used 1 entry,
+Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in IotWPolsce:2015:CMC
+Warning--empty journal in Gsma:2011:CMC
+Warning--empty journal in Kaspersky:2014:CMC
+Warning--empty journal in Ks:2014:CMC
+Warning--empty journal in Npm:2014:CMC
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            458 strings with 4328 characters,
-and the built_in function-call counts, 205 in all, are:
-= -- 11
-> -- 17
+            485 strings with 4816 characters,
+and the built_in function-call counts, 916 in all, are:
+= -- 70
+> -- 28
 < -- 0
-+ -- 6
-- -- 5
-* -- 14
-:= -- 44
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
++ -- 14
+- -- 7
+* -- 23
+:= -- 170
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 8
-empty$ -- 15
-format.name$ -- 5
-if$ -- 38
+cite$ -- 14
+duplicate$ -- 56
+empty$ -- 99
+format.name$ -- 7
+if$ -- 190
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 5
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 38
+num.names$ -- 7
+pop$ -- 35
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3
+skip$ -- 21
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -46,8 +90,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 1
-width$ -- 2
-write$ -- 11
-(There was 1 error message)
+warning$ -- 7
+while$ -- 7
+width$ -- 8
+write$ -- 65
+(There were 11 error messages)

@@ -1,8 +1,38 @@
 \begin{thebibliography}{1}
 
+\bibitem{Gfk:2015:CMC}
+GfK.
+\newblock Smart home: Making the smart home a reality.
+\newblock 2015.
+
 \bibitem{Nsr:2015:CMC}
-Ramez Elmasri, Yu-Chi Wu, Babak Hojabri, Charley Li, and Jack Fu.
+Alan Crisp.
 \newblock Internet of things: prime time for satellite?
 \newblock 2015.
+
+\bibitem{IotWPolsce:2015:CMC}
+P.~Kolenda K. Krejtz A. Legoń P. Rytel R.~Wierzbiński M.~Grodner, W.~Kokot.
+\newblock Internet rzeczy w polsce.
+\newblock 2015.
+
+\bibitem{Gsma:2011:CMC}
+GSMA.
+\newblock Vision of smart home: The role of mobile in the home of the future.
+\newblock 2011.
+
+\bibitem{Kaspersky:2014:CMC}
+J.~A.~Guerrero R.~Martinez.
+\newblock Wear the danger.
+\newblock 2014.
+
+\bibitem{Ks:2014:CMC}
+Komputer Świat.
+\newblock Internet rzeczy - czym jest i jakie niesie zagrożenia.
+\newblock 2016.
+
+\bibitem{Npm:2014:CMC}
+Stefan Baumgartner.
+\newblock Using npm packages.
+\newblock 2014.
 
 \end{thebibliography}
