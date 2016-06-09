@@ -28,9 +28,6 @@
 \contentsline {section}{\numberline {4.8}Cel powstania projektu}{31}{section.4.8}
 \contentsline {section}{\numberline {4.9}Realizacja projektu}{31}{section.4.9}
 \contentsline {chapter}{Zakończenie}{32}{chapter*.5}
-\contentsline {chapter}{\numberline {A}Tytuł załącznika jeden}{33}{appendix.A}
-\contentsline {chapter}{\numberline {B}Tytuł załącznika dwa}{34}{appendix.B}
-\contentsline {chapter}{Bibliografia}{35}{appendix*.6}
-\contentsline {chapter}{Spis tabel}{36}{appendix*.7}
-\contentsline {chapter}{Spis rysunków}{37}{appendix*.8}
-\contentsline {chapter}{Oświadczenie}{38}{appendix*.9}
+\contentsline {chapter}{Bibliografia}{33}{appendix*.6}
+\contentsline {chapter}{Spis rysunków}{34}{appendix*.7}
+\contentsline {chapter}{Oświadczenie}{35}{appendix*.8}
