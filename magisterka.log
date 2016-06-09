@@ -1,0 +1,32 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.20)  9 JUN 2016 20:51
+entering extended mode
+**./magisterka.tex
+(magisterka.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+(xmgr.cls
+Document Class: xmgr 2009/12/12 v2.0.0 (W. Bzyl)
+
+! LaTeX Error: File `report.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.15 \RequirePackage
+                    {ifthen}
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 20 strings out of 493634
+ 244 string characters out of 3145361
+ 52604 words of memory out of 3000000
+ 3500 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 17i,0n,19p,104b,9s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
