@@ -169,10 +169,7 @@ Jest to idealne środowisko dla programistów, którzy są pasjonatami elektroni
 Na początku przygody z płytką Arduino zazwyczaj nie mamy zbyt wiele sprzętu którego moglibyśmy wykorzystać do stworzenia czegoś użytecznego. Dlatego pierwszym programem dzięki którym poznajemy się z samym językiem programowania oraz samym mikrokontrolerem jest miganie wbudowaną diodą.
 
 
-\section{Inteligentny Dom w praktyce – przykładowe projekty}
-
-
-\section{Stacja Meteorologiczna}
+\section{Inteligentny Dom w praktyce – Stacja Meteorologiczna}
 
 Jednym z najprostszych a dającym najwięcej satysfakcji projektów jest stacja meteorologiczna zbudowana przy pomocy Arduino oraz kilku czujników. Poziom zaawansowania układu zależy tutaj od budującego taką stacje. Możemy po prostu mierzyć temperaturę oraz wilgotność powietrza za pomocą cyfrowego czujnika DHT11 lub DHT22. Różnice między czujnikami znajdują się poniżej. 
 
@@ -181,26 +178,7 @@ Dorzucając takie funkcjonalności jak: wykrywanie burzy, pomiar ciśnienia, spr
 
 \section{Sterowanie oświetleniem}
 
-\section{Zarządzanie bezpieczeństwem}
-Wygodny nadzór nad domem podczas nieobecności do niedawna kojarzył się z czymś ekskluzywnym. Powszechnie monitoring znajdował się jedynie w bogatych domach. Jednak z tak szybkim postępem technologicznym na takie luksusy może pozwolić sobie każdy, praktycznie zerowym kosztem. Większość ludzi posiada jakiś stary, nieużywany telefon komórkowy z aparatem. Można go wykorzystać jako kamerę IP, dostępną w sieci lokalnej domu. Specjalne oprogramowanie będzie przesyłać obraz z dobrze umiejscowionemu telefonu do serwera. To może być dowolne urządzenie, jednak na potrzeby naszego eksperymentu będzie nazywany serwerem. W naszym przypadku użyliśmy 2 aparatów i laptopa. 
-
-Za strumieniowanie wideo z kamery odpowiedzialny jest program IP Webcam.
-W cenie ok. 12 zł znajdują się dodatkowe funkcje:
-\begin{itemize}
-\item Integracja z Taskerem,
-\item Konfigurowalny UI,
-\item Bezpośredni skrót na ekranie głównym do uruchomienia aplikacji w, trybie nadawania,
-\item Brak znaku wodnege,
-\item Brak reklam.
-\end{itemize}
-To bardzo niewiele w porównaniu do tego, co aplikacja ma do zaoferowania. Autor programu, Pavel Khlebovich, do wersji pro  podchodzi bardziej jak do dobrowolnej dotacji.
-IP Webcam posiada ogrom funkcji. Oprócz najważniejszej, czyli wystawiania zwykłego interfejsu kamery IP, sama w sobie posiada funkcję serwera. I to bardzo przemyślanego. Na wstępie zaskakuje ilość sposobów w jaki można odbierać obraz i/lub dźwięk z urządzenia. Można też zapisywać pliki w archiwum, albo skonfigurować Taskera. Wszystko jest zrobione w Bootstrap'ie i działa bardzo dobrze na prawie każdym urządzeniu, dzięki możliwości wyboru sposobu transmisji.
-Jednak ma to podstawowy problem. Ciężko mówić o monitoringu mając obraz z jednej kamery. Wiele kamer oznacza wiele serwerów, każdy nadający obraz tylko ze swojego aparatu. Aby podejrzeć obraz z domu będąc na urlopie należałoby zalogować się na każdą kamerę z osobna, co w przypadku większej ilości kamer byłoby zupełnie niepraktyczne. Zaprogramowaliśmy serwer w technologii Meteor, który odbiera sygnał z wielu kamer, zapisuje migawki do pliku i serwuje je klientowi.
-Aby to wszystko było możliwe najpierw należało zainstalować Meteora. Po początkowych nieudanych próbach uruchomienia frameworka na wirtualnej maszynie VirtualBox + Vagrant spowodowanych brakiem sympatii sterownika MongoDB do montowanych folderów, postawiliśmy serwer na Windowsie 8.1. Główną wadą tego rozwiązania był brak programu npm, co stanowiło spory problem gdyż najlepszy naszym zdaniem sterownik do kamer IP jest modułem Node.js. Jednak wszystko jest możliwe z odrobiną hacks'ów. Z pomocą przyszedł moduł meteorhacks/npm, który wbrew nazwie w odpowiedni sposób dodaje obsługę npm do Meteora, co zresztą potwierdzają doświadczeni programiści~\cite{Npm:2015:CMC}.
-Potrzebna była jeszcze tylko aplikacja do obsługi naszego ustawienia. Z założenia aplikacja miała obsługiwać wiele kamer, i to w dodatku wyświetlać obraz na dowolnym urządzeniu w dowolnym miejscu. Zatem nie było mowy o strumieniu na żywo, gdyż rozmiar przesyłanych danych byłby zbyt wielki. Postawiliśmy na prostotę: serwer co sekundę odpytuje wszystkie kamery o zrzut ekranu. Zapisuje je potem do odpowiednich plików i wysyła je do klienta, gdzie stanowią one zwykłe obrazki okraszone Bootstrapem dla obsługi urządzeń mobilnych. Obrazki zmieniające się co sekundę dają wrażenie oglądania nagrania na żywo, co technicznie jest prawdą.
-Wiele problemów sprawił też sam node-cam, który jest w wersji 0.0.1 i sam autor przestrzega przed tym, że projekt nie jest ukończony. Jednak spodobało nam się proste API i dzięki wspólnemu wysiłkowi udało nam się skonfigurować ten moduł. 
-Niskie tempo odświeżania rekompensuje fakt, iż możemy podłączyć wiele kamer i mieć odczyt na żywo z każdej z nich. W naszym przypadku całkowicie zerowym kosztem stworzyliśmy system nadzoru domu, do którego można się zalogować. Do zabezpieczenia aplikacji użyliśmy standardowej autoryzacji poprzez HTTP, której obsługę do Meteora dodaliśmy przy pomocy modułu Jabbslad/basic-auth.
-Innym przystępnym rozwiązaniem jest inteligentny system oświetlenia. Za pomocą Arduino jesteśmy w stanie sterować oświetleniem w całym mieszkaniu. Wystarczy, że odpowiednio podłączymy moduły z przekaźnikiem do sterownika. Możliwości tego rozwiązania są dużo większe niż wspomniane na początku rozdziału gotowe urządzenia. Tutaj cała konfiguracja i pole manewru leży w naszych rękach. Możemy odwzorować sklepową wersję inteligentnej żarówki i ograniczyć się do centralnego sterowania oświetleniem w domu z poziomu aplikacji na komórce.
+Za pomocą Arduino jesteśmy w stanie sterować oświetleniem w całym mieszkaniu. Wystarczy, że odpowiednio podłączymy moduły z przekaźnikiem do sterownika. Możliwości tego rozwiązania są dużo większe niż wspomniane na początku rozdziału gotowe urządzenia. Tutaj cała konfiguracja i pole manewru leży w naszych rękach. Możemy odwzorować sklepową wersję inteligentnej żarówki i ograniczyć się do centralnego sterowania oświetleniem w domu z poziomu aplikacji na komórce.
 Fajnym pomysłem na urozmaicenie takiego projektu jest zaprogramowanie różnych scen. Jednym kliknięciem możemy ustawić oświetlenie tak by sprzyjało czytaniu książki lub oglądaniu filmów.
 Kolejnym ciekawym rozwiązaniem jest podpięcie całego systemu oświetlenia do sieci i umożliwienie sterowania przez stronę www. Możemy w ten sposób na przykład sprawdzić czy na pewno zgasiliśmy światło w domu, będąc jednocześnie w zupełnie innym miejscu. Oczywiście trzeba uwzględnić zabezpieczenie takiego projektu tak, żeby osoby niepożądane nie mogły przejąć kontroli nad naszym systemem. Zdalne sterowanie oświetleniem daje nam możliwość symulowania obecności w domu gdy jesteśmy np. na wczasach. Możemy zdalnie włączać i wyłączać światło, ale nic nie stoi na przeszkodzie by ten proces zautomatyzować i ustawić godziny w których nasz dom będzie zapalał i gasił oświetlenie.
 W ubiegłym roku powstała strona na której można było sterować oświetleniem świątecznym rozwieszonym na domu. Był jednocześnie podgląd online dzięki któremu na żywo mogliśmy obserwować wszystkie czynności które wykonywaliśmy. 
@@ -209,11 +187,7 @@ W ubiegłym roku powstała strona na której można było sterować oświetlenie
 
 \section{Projekt inteligentnego nawadniania roślin}
 
-\section{Cel powstania projektu}
-
 Głównym celem rozdziału poświęconego tworzeniu własnych rozwiązań do inteligentnego domu było stworzenie systemu który pozwoli przy pomocy sensorów wyhodować roślinę. Chcieliśmy też zebrać wszelkie informacje o warunkach w jakich roślina byłaby wyhodowana: temperatura, wilgotność powietrza, wilgotność gleby, poziom natężenia światła. Wszystkie informacje wysyłane są na stronę internetową. Dzięki temu mielibyśmy wgląd do historii danych o warunkach w jakich rosła roślina. 
-
-\section{Realizacja projektu}
 
 Pierwszą rzeczą jaką wykonaliśmy to skompletowanie listy rzeczy które będą potrzebne do wykonania tego systemu. Chcieliśmy też osiągnąć cel jak najniższym kosztem. Postanowiliśmy, że zamówimy przedmioty w Chinach, za pośrednictwem portalu www.aliexpress.com. Ceny elementów są dużo niższe niż w Polsce, a jedyna wadą tego rozwiązania był czas realizacji zamówienia który sięgał blisko 60 dni.
 
@@ -232,10 +206,6 @@ Daje nam to w przeliczeniu: 53,76 zł (przy kursie dolara wynoszącym 3,84 zł)
 Gdybyśmy chcieli zrobić takie zakupy w Polsce cena wyniosła by około: 130 zł 
 
 \section{Budowa własnego systemu monitoringu}
-
-\section{Cel powstania projektu}
-
-\section{Realizacja projektu}
 
 Wygodny nadzór nad domem podczas nieobecności do niedawna kojarzył się z czymś ekskluzywnym. Powszechnie monitoring znajdował się jedynie w bogatych domach. Jednak z tak szybkim postępem technologicznym na tego typu luksusy może pozwolić sobie niemalże każdy, praktycznie zerowym kosztem. Większość ludzi posiada jakiś stary, nieużywany telefon komórkowy z aparatem. Można go wykorzystać jako kamerę IP, dostępną w sieci lokalnej domu. Specjalne oprogramowanie będzie przesyłać obraz z dobrze umiejscowionego telefonu do serwera. To może być dowolne urządzenie, jednak na potrzeby naszego eksperymentu będzie nazywany serwerem. W naszym przypadku użyliśmy 2 aparatów i laptopa.
 Za strumieniowanie wideo z kamery odpowiedzialny jest program IP Webcam1. Aplikacja jest dostępna za darmo, z możliwością wykupienia wersji pro. W cenie ok. 12 zł znajdują się dodatkowe funkcje:
@@ -257,9 +227,6 @@ Niskie tempo odświeżania rekompensuje fakt, iż możemy podłączyć wiele kam
 
 \section{Budowa inteligetnego oswietlenia}
 
-\section{Cel powstania projektu}
-
-\section{Realizacja projektu}
 
 % zakończenie
 \summary
