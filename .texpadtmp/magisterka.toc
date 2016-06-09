@@ -3,23 +3,23 @@
 \contentsline {chapter}{\numberline {1}Internet rzeczy}{10}{chapter.1}
 \contentsline {section}{\numberline {1.1}Informacje ogólne o Internetu rzeczy}{10}{section.1.1}
 \contentsline {section}{\numberline {1.2}Warunki istnienia IoT}{10}{section.1.2}
-\contentsline {section}{\numberline {1.3}Korzyści wynikające z wykorzystania internetu rzeczy}{11}{section.1.3}
-\contentsline {chapter}{\numberline {2}Kierunki rozwoju Internetu Rzeczy}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Warunki rozwoju IoT}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}Idea rozwoju Internetu Rzeczy}{16}{section.2.2}
-\contentsline {section}{\numberline {2.3}Wykorzystanie IoT w zyciu codziennym}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Wearables, RTV/AGD}{17}{section.2.4}
-\contentsline {section}{\numberline {2.5}Inteligetny Dom}{18}{section.2.5}
-\contentsline {section}{\numberline {2.6}Zagrożenia płynące z rozwoju IoT}{19}{section.2.6}
-\contentsline {chapter}{\numberline {3}Praktyczne wykorzystanie inteligentnych rzeczy}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Wykorzystanie Arduino przy budowaniu własnych projektów}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Inteligentny Dom w praktyce – Stacja Meteorologiczna}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Sterowanie oświetleniem}{26}{section.3.3}
-\contentsline {chapter}{\numberline {4}Doswiadczenia praktyczne}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Projekt inteligentnego nawadniania roślin}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Budowa własnego systemu monitoringu}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Budowa inteligetnego oswietlenia}{30}{section.4.3}
-\contentsline {chapter}{Zakończenie}{31}{chapter*.5}
-\contentsline {chapter}{Bibliografia}{32}{appendix*.6}
-\contentsline {chapter}{Spis rysunków}{33}{appendix*.7}
-\contentsline {chapter}{Oświadczenie}{34}{appendix*.8}
+\contentsline {section}{\numberline {1.3}Korzyści wynikające z wykorzystania internetu rzeczy}{12}{section.1.3}
+\contentsline {chapter}{\numberline {2}Kierunki rozwoju Internetu Rzeczy}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Warunki rozwoju IoT}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Idea rozwoju Internetu Rzeczy}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}Wykorzystanie IoT w zyciu codziennym}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}Wearables, RTV/AGD}{18}{section.2.4}
+\contentsline {section}{\numberline {2.5}Inteligetny Dom}{19}{section.2.5}
+\contentsline {section}{\numberline {2.6}Zagrożenia płynące z rozwoju IoT}{20}{section.2.6}
+\contentsline {chapter}{\numberline {3}Praktyczne wykorzystanie inteligentnych rzeczy}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Wykorzystanie Arduino przy budowaniu własnych projektów}{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}Inteligentny Dom w praktyce – Stacja Meteorologiczna}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}Sterowanie oświetleniem}{27}{section.3.3}
+\contentsline {chapter}{\numberline {4}Doswiadczenia praktyczne}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Projekt inteligentnego nawadniania roślin}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}Budowa własnego systemu monitoringu}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Budowa inteligetnego oswietlenia}{31}{section.4.3}
+\contentsline {chapter}{Zakończenie}{32}{chapter*.5}
+\contentsline {chapter}{Bibliografia}{33}{appendix*.6}
+\contentsline {chapter}{Spis rysunków}{34}{appendix*.7}
+\contentsline {chapter}{Oświadczenie}{35}{appendix*.8}
