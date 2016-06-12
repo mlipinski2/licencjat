@@ -33,10 +33,25 @@ Piotr Prajsnar.
 \newblock Internet rzeczy? to nie to, co myślisz...
 \newblock 2015.
 
+\bibitem{Designing}
+Hakim~Cassimally Adrian~McEwen.
+\newblock {\em Designing the Internet of Things}.
+\newblock John Wiley \& Sons Ltd, 2014.
+
+\bibitem{Gsma:2011:CMC}
+GSMA.
+\newblock Vision of smart home: The role of mobile in the home of the future.
+\newblock 2011.
+
 \bibitem{Gfk:2015:CMC}
 GfK.
 \newblock Smart home: Making the smart home a reality.
 \newblock 2015.
+
+\bibitem{KeyApplications}
+Osmar~Elloumi Olivier~Hersent, David~Boswarthick.
+\newblock {\em The Internet of Things: Key applications and protocols}.
+\newblock John Wiley \& Sons Ltd, 2012.
 
 \bibitem{Nsr:2015:CMC}
 Alan Crisp.
@@ -53,11 +68,6 @@ Francis daCosta.
 P.~Kolenda K. Krejtz A. Legoń P. Rytel R.~Wierzbiński M.~Grodner, W.~Kokot.
 \newblock Internet rzeczy w polsce.
 \newblock 2015.
-
-\bibitem{Gsma:2011:CMC}
-GSMA.
-\newblock Vision of smart home: The role of mobile in the home of the future.
-\newblock 2011.
 
 \bibitem{Abusing}
 Nitesh Dhanjani.
