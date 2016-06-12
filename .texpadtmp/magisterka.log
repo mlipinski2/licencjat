@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  12 JUN 2016 16:07
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  12 JUN 2016 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -760,9 +760,9 @@ Rozdział 3.
 
 ] [24] [25] [26] [27] [28] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.bbl [29
 
-]) [30
+] [30
 
-] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.lof
+]) [31] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.lof
 Overfull \hbox (8.12976pt too wide) in paragraph at lines 2--2
  [][] [][][]\EU1/Arial(0)/m/n/12 IoT, źródło: http://knowledge-cess.com/category/technical/iot- 
  []
@@ -771,9 +771,9 @@ Overfull \hbox (8.12976pt too wide) in paragraph at lines 2--2
 \tf@lof=\write5
 \openout5 = `magisterka.lof'.
 
- [31
+ [32
 
-] [32
+] [33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 268.
@@ -784,12 +784,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 268.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 268.
  ) 
 Here is how much of TeX's memory you used:
- 21548 strings out of 493591
- 390303 string characters out of 6143547
- 436511 words of memory out of 5000000
- 24772 multiletter control sequences out of 15000+600000
+ 21553 strings out of 493591
+ 390351 string characters out of 6143547
+ 436664 words of memory out of 5000000
+ 24777 multiletter control sequences out of 15000+600000
  7881 words of font info for 56 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,12n,65p,10410b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,65p,10410b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.pdf (32 pages).
+Output written on /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.pdf (33 pages).

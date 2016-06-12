@@ -17,5 +17,5 @@
 \contentsline {section}{\numberline {3.4}Budowa inteligetnego oswietlenia}{28}{section.3.4}
 \contentsline {chapter}{Zakończenie}{29}{chapter*.5}
 \contentsline {chapter}{Bibliografia}{30}{appendix*.6}
-\contentsline {chapter}{Spis rysunków}{31}{appendix*.7}
-\contentsline {chapter}{Oświadczenie}{32}{appendix*.8}
+\contentsline {chapter}{Spis rysunków}{32}{appendix*.7}
+\contentsline {chapter}{Oświadczenie}{33}{appendix*.8}

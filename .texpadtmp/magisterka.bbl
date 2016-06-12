@@ -28,6 +28,11 @@ pragya~singh p.
   safety first!
 \newblock 2015.
 
+\bibitem{miasta}
+Piotr Prajsnar.
+\newblock Internet rzeczy? to nie to, co myślisz...
+\newblock 2015.
+
 \bibitem{Gfk:2015:CMC}
 GfK.
 \newblock Smart home: Making the smart home a reality.
@@ -37,6 +42,12 @@ GfK.
 Alan Crisp.
 \newblock Internet of things: prime time for satellite?
 \newblock 2015.
+
+\bibitem{Rethinking}
+Francis daCosta.
+\newblock {\em Rethinking the Internet of Things: A Scalable Approach to
+  Connecting Everything}.
+\newblock Apress Media, 2013.
 
 \bibitem{IotWPolsce:2015:CMC}
 P.~Kolenda K. Krejtz A. Legoń P. Rytel R.~Wierzbiński M.~Grodner, W.~Kokot.
@@ -48,6 +59,11 @@ GSMA.
 \newblock Vision of smart home: The role of mobile in the home of the future.
 \newblock 2011.
 
+\bibitem{Abusing}
+Nitesh Dhanjani.
+\newblock {\em Abusing the Internet of Things}.
+\newblock O'REILLY.
+
 \bibitem{Kaspersky:2014:CMC}
 J.~A.~Guerrero R.~Martinez.
 \newblock Wear the danger.
@@ -57,6 +73,16 @@ J.~A.~Guerrero R.~Martinez.
 Komputer Świat.
 \newblock Internet rzeczy - czym jest i jakie niesie zagrożenia.
 \newblock 2016.
+
+\bibitem{Learning}
+Peter Waher.
+\newblock {\em Learning Internet of Things}.
+\newblock Packt Publishing.
+
+\bibitem{Started}
+Cuno Pfister.
+\newblock {\em Getting Started with the Internet of Things}.
+\newblock O'REILLY.
 
 \bibitem{Npm:2014:CMC}
 Stefan Baumgartner.
