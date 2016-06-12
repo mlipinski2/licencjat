@@ -163,7 +163,7 @@ O ile do niedawna możliwość posiadania inteligentnego domu zarezerwowana był
 \centering
 \includegraphics[width=12cm]{m_percent}
 \caption{GfK report on Internet of Things. Źródło: https://www.gfk.com/fileadmin/user_upload/dyna_content/Global/documents/Reports/GfK-smart-home-teaserdeck-global.pdf}
-\label{fig:exp}
+\label{fig:gfk}
 \end{figure} 
 
 \section{Zagrożenia płynące z rozwoju IoT}
@@ -251,6 +251,12 @@ Aby to wszystko było możliwe najpierw zainstalowano Meteora. Po początkowych 
 Potrzebna była jeszcze tylko aplikacja do obsługi naszego ustawienia. Z założenia aplikacja miała obsługiwać wiele kamer, i to w dodatku wyświetlać obraz na dowolnym urządzeniu w dowolnym miejscu. Zatem nie było mowy o strumieniu na żywo, gdyż rozmiar przesyłanych danych byłby zbyt wielki. Postawiliśmy na prostotę: serwer co sekundę odpytuje wszystkie kamery o zrzut ekranu. Zapisuje je potem do odpowiednich plików i wysyła je do klienta, gdzie stanowią one zwykłe obrazki okraszone Bootstrapem dla obsługi urządzeń mobilnych. Obrazki zmieniające się co sekundę dają wrażenie oglądania nagrania na żywo, co technicznie jest prawdą.
 
 Wiele problemów sprawił też sam node-cam, który jest w wersji 0.0.1 i sam autor przestrzega przed tym, że projekt nie jest ukończony. Jednak spodobało nam się proste API i dzięki wspólnemu wysiłkowi udało nam się skonfigurować ten moduł.
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm]{m_cam}
+\caption{Działający system monitoringu. Opracowanie własne.}
+\label{fig:cam}
+\end{figure} 
 
 Niskie tempo odświeżania rekompensuje fakt, iż możemy podłączyć wiele kamer i mieć odczyt na żywo z każdej z nich. W naszym przypadku całkowicie zerowym kosztem stworzyliśmy system nadzoru domu, do którego można się zalogować. Do zabezpieczenia aplikacji użyliśmy standardowej autoryzacji poprzez HTTP, której obsługę do Meteora dodaliśmy przy pomocy modułu Jabbslad/basic-auth.
 
