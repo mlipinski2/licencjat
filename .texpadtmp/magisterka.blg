@@ -3,41 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.aux
 The style file: unsrt.bst
 Database file #1: ../xml.bib
-I was expecting a `,' or a `}'---line 80 of file ../xml.bib
+I was expecting a `,' or a `}'---line 77 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 88 of file ../xml.bib
+I was expecting a `,' or a `}'---line 85 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 96 of file ../xml.bib
+I was expecting a `,' or a `}'---line 93 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 104 of file ../xml.bib
+I was expecting a `,' or a `}'---line 101 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 112 of file ../xml.bib
+I was expecting a `,' or a `}'---line 109 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 120 of file ../xml.bib
+I was expecting a `,' or a `}'---line 117 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 128 of file ../xml.bib
+I was expecting a `,' or a `}'---line 125 of file ../xml.bib
  :   
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 133 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in KA:2009:iot
 Warning--empty journal in Gfk:2015:CMC
 Warning--empty journal in Nsr:2015:CMC
 Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
@@ -53,45 +59,45 @@ Warning--empty journal in Gsma:2011:CMC
 Warning--empty journal in Kaspersky:2014:CMC
 Warning--empty journal in Ks:2014:CMC
 Warning--empty journal in Npm:2014:CMC
-You've used 7 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            485 strings with 4816 characters,
-and the built_in function-call counts, 916 in all, are:
-= -- 70
-> -- 28
+            498 strings with 5096 characters,
+and the built_in function-call counts, 1202 in all, are:
+= -- 95
+> -- 36
 < -- 0
-+ -- 14
-- -- 7
-* -- 23
-:= -- 170
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 7
++ -- 18
+- -- 9
+* -- 32
+:= -- 218
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 56
-empty$ -- 99
-format.name$ -- 7
-if$ -- 190
+cite$ -- 17
+duplicate$ -- 74
+empty$ -- 132
+format.name$ -- 9
+if$ -- 255
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 7
-newline$ -- 38
-num.names$ -- 7
-pop$ -- 35
+int.to.str$ -- 9
+missing$ -- 10
+newline$ -- 48
+num.names$ -- 9
+pop$ -- 45
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 26
 stack$ -- 0
 substring$ -- 0
-swap$ -- 0
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 7
-width$ -- 8
-write$ -- 65
-(There were 11 error messages)
+warning$ -- 8
+while$ -- 9
+width$ -- 10
+write$ -- 86
+(There were 12 error messages)

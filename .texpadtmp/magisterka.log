@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  12 JUN 2016 13:27
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  12 JUN 2016 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,8 +730,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-File: images/i.png Graphic file (type QTm)
- <use  "images/i.png" > [6
+File: images/iot_wstep.png Graphic file (type QTm)
+ <use  "images/iot_wstep.png" > [6
 
 ]
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 79.
@@ -763,13 +763,8 @@ Rozdział 3.
 ]) [30
 
 ] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.lof
-Overfull \hbox (41.4685pt too wide) in paragraph at lines 2--2
- [][] [][][]\EU1/Arial(0)/m/n/12 IoT Źródło: http://www.computerworld.com/article/2488136/internet- 
- []
-
-
-Overfull \hbox (17.0028pt too wide) in paragraph at lines 2--2
- \EU1/Arial(0)/m/n/12 4-things-to-do-now-to-get-ready-for-the-internet-of-things.html, 
+Overfull \hbox (8.12976pt too wide) in paragraph at lines 2--2
+ [][] [][][]\EU1/Arial(0)/m/n/12 IoT, źródło: http://knowledge-cess.com/category/technical/iot- 
  []
 
 )
@@ -789,10 +784,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 260.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 21542 strings out of 493591
- 390217 string characters out of 6143547
- 436327 words of memory out of 5000000
- 24766 multiletter control sequences out of 15000+600000
+ 21544 strings out of 493591
+ 390260 string characters out of 6143547
+ 436341 words of memory out of 5000000
+ 24768 multiletter control sequences out of 15000+600000
  7881 words of font info for 56 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  55i,12n,65p,10410b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
