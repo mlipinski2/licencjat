@@ -17,10 +17,16 @@ P.~Kolenda K. Krejtz A. Legoń P. Rytel R.~Wierzbiński M.~Grodner, W.~Kokot.
 \newblock Raport - internet rzeczy w polsce.
 \newblock 2015.
 
-\bibitem{BMMD:2016:BSC}
+\bibitem{beck}
 Benduch~Dorota Badowski~Mateusz.
 \newblock {\em Internet rzeczy. Bezpieczeństwo w Smart City}.
 \newblock C.H. BECK, pierwsze edition, 2016.
+
+\bibitem{toster}
+pragya~singh p.
+\newblock Iot \& internet of things applications online – smart living but
+  safety first!
+\newblock 2015.
 
 \bibitem{Gfk:2015:CMC}
 GfK.

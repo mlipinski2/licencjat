@@ -48,6 +48,11 @@ I was expecting a `,' or a `}'---line 141 of file ../xml.bib
  :   acknowledgement = ack-nhfb,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 161 of file ../xml.bib
+ :   
+ :   acknowledgement = ack-nhfb,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty journal in KA:2009:iot
 Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry RP:2015:IOTPL
 while executing---line 944 of file unsrt.bst
@@ -58,6 +63,7 @@ while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry RP:2015:IOTPL
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in RP:2015:IOTPL
+Warning--empty journal in toster
 Warning--empty journal in Gfk:2015:CMC
 Warning--empty journal in Nsr:2015:CMC
 Too many commas in name 1 of "M. Grodner, W. Kokot, P. Kolenda, K. Krejtz, A. Legoń, P. Rytel, R. Wierzbiński" for entry IotWPolsce:2015:CMC
@@ -73,36 +79,36 @@ Warning--empty journal in Gsma:2011:CMC
 Warning--empty journal in Kaspersky:2014:CMC
 Warning--empty journal in Ks:2014:CMC
 Warning--empty journal in Npm:2014:CMC
-You've used 11 entries,
+You've used 12 entries,
             1791 wiz_defined-function locations,
-            508 strings with 5282 characters,
-and the built_in function-call counts, 1486 in all, are:
-= -- 119
-> -- 44
+            510 strings with 5360 characters,
+and the built_in function-call counts, 1614 in all, are:
+= -- 129
+> -- 48
 < -- 0
-+ -- 22
-- -- 11
-* -- 40
-:= -- 267
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 11
++ -- 24
+- -- 12
+* -- 43
+:= -- 290
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 92
-empty$ -- 165
-format.name$ -- 11
-if$ -- 319
+cite$ -- 22
+duplicate$ -- 100
+empty$ -- 179
+format.name$ -- 12
+if$ -- 346
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 13
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 56
+int.to.str$ -- 12
+missing$ -- 14
+newline$ -- 63
+num.names$ -- 12
+pop$ -- 61
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 33
 stack$ -- 0
 substring$ -- 0
 swap$ -- 2
@@ -110,8 +116,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 11
-width$ -- 13
-write$ -- 106
-(There were 17 error messages)
+warning$ -- 10
+while$ -- 12
+width$ -- 14
+write$ -- 115
+(There were 18 error messages)
