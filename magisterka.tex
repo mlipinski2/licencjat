@@ -213,25 +213,28 @@ Kolejnym ciekawym rozwiązaniem jest podpięcie całego systemu oświetlenia do 
 W ubiegłym roku powstała strona na której można było sterować oświetleniem świątecznym rozwieszonym na domu. Był jednocześnie podgląd online dzięki któremu na żywo mogliśmy obserwować wszystkie czynności które wykonywaliśmy. 
 
 \section{Projekt inteligentnego nawadniania roślin}
-
-Głównym celem rozdziału poświęconego tworzeniu własnych rozwiązań do inteligentnego domu było stworzenie systemu który pozwoli przy pomocy sensorów wyhodować roślinę. Chcieliśmy też zebrać wszelkie informacje o warunkach w jakich roślina byłaby wyhodowana: temperatura, wilgotność powietrza, wilgotność gleby, poziom natężenia światła. Wszystkie informacje wysyłane są na stronę internetową. Dzięki temu mielibyśmy wgląd do historii danych o warunkach w jakich rosła roślina. 
-
-Pierwszą rzeczą jaką wykonaliśmy to skompletowanie listy rzeczy które będą potrzebne do wykonania tego systemu. Chcieliśmy też osiągnąć cel jak najniższym kosztem. Postanowiliśmy, że zamówimy przedmioty w Chinach, za pośrednictwem portalu www.aliexpress.com. Ceny elementów są dużo niższe niż w Polsce, a jedyna wadą tego rozwiązania był czas realizacji zamówienia który sięgał blisko 60 dni.
-
-Lista zakupów:
+	Pamięć o podlewaniu kwiatów domowych nigdy nie była naszą mocną stroną. Postanowiliśmy więc stworzyć system, który będzie nas informował drogą mailową o potrzebie nawodnieniu rośliny. Chcieliśmy również zbierać informacje o temperaturze, wilgotności powietrza i poziomie wilgotności gleby. Wszystkie dane wysyłane są na serwer i dzięki stronie internetowej będziemy mogli w przyszłości analizować wyniki które ułatwią nam ponowne wyhodowanie rośliny. 
+	Pierwszym krokiem jaki wykonaliśmy to skompletowanie listy rzeczy które były niezbędne do wykonania tego systemu. Należą do nich: 
 \begin{itemize}
-\item Płytka Arduino UNO: 2,7
-\item Sensor wilgotności gleby: 0,86
-\item Sensor temperatury i wilgotności powietrza: 3,01
-\item Czujnik natężenia światła: 1,42
-\item Moduł Wifi: 2,70
-\item Zestaw kabli i rezystorów: 2,00
-\item Płytka stykowa dedykowana do Arduino: 1,31
+\item Płytka Arduino UNO: 2,7\$
+\item Sensor wilgotności gleby: 0,86\$
+\item Sensor temperatury i wilgotności powietrza: 3,01\$
+\item Moduł Wifi: 2,70\$
+\item Zestaw kabli i rezystorów: 2,00\$
+\item Płytka stykowa dedykowana do Arduino: 1,31\$
 \end{itemize}
-Łączna kwota: 14\$
-Daje nam to w przeliczeniu: 53,76 zł (przy kursie dolara wynoszącym 3,84 zł)
-Gdybyśmy chcieli zrobić takie zakupy w Polsce cena wyniosła by około: 130 zł 
+Koszt takiego zestawu na rynku polskim wynosiłby około 130 PLN. Jednak w celu zminimalizowania kosztów, zakupu dokonaliśmy w serwisie AliExpress. Zredukowało to koszta  projektu do kwoty około 54 PLN (14\$ przy kursie dolara wynoszącym 3,84 PLN).
+	Przed przystąpieniem do składania projektu musieliśmy zainstalować IDE (ang. Integrated Development Environment) czyli zintegrowane środowisko do pisania programów, dzięki któremu będziemy mogli wgrywać programy na naszą płytkę. Następnie sprawdziliśmy czy wszystkie sensory działają poprawnie. Zaczęliśmy od podstawowego czujnika DHT11. Jest to układ odpowiadający za pomiar temperatury i wilgotności powietrza. W celu sprawdzenia napisaliśmy prosty program wykorzystujący bibliotekę ‘’DHT.h’’. Po podłączeniu zgodnie z opisem sensora nie byliśmy w stanie odczytać poprawnych wartości. Po głębszej analizie okazało się, że czujnik który dostaliśmy ma inaczej poprowadzone PINy (info). Kolejną rzeczą która musieliśmy sprawdzić to podłączenie sensora wilgotności gleby do naszej płytki. Po wstępnej analizie danych z czujnika, porównując wyniki z innymi użytkownikami tego samego czujnika uznaliśmy, że zachowuje się on prawidłowo. Ostatnim krokiem przygotowawczym było sprawdzenie modułu WiFi. Pozornie najtrudniejszy moduł nie sprawił nam najmniejszych problemów. Wszystko działało poprawnie i mogliśmy zabrać się za tworzenie inteligentnego systemu nawadniania roślin.
+	Po sprawdzeniu każdego czujnika z osobna mogliśmy przystąpić do pracy. Musieliśmy tylko napisać program który będzie obsługiwał wszystkie moduły naraz. W pierwszej kolejności podłączyliśmy czujniki odpowiadające za pomiar temperatury, wilgotności gleby i powietrza. Następnie zajęliśmy się konfigurowaniem połączenia sieciowego. Nasz program sprawdzał wszystkie pomiary trzy razy w trakcie doby – w nocy o godzinie 00:00, o  8:00 nad ranem oraz popołudniu o godzinie 16:00. Dane za każdym razem wysyłane były na serwer. Na rysunku [x] przedstawiony został wykres przedstawiający dane z trzech dni.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{pawel_wykres}
+\caption{Dane z czujników przedstawione na wykresie, źródło: Opracowanie własne}
+\label{fig:iot}
+\end{figure}
+
+Ostatnim krokiem było dodanie powiadomień na maila. Skorzystaliśmy z gotowego rozwiązania PushingBox (źródło). Jest to dedykowane rozwiązanie dla urządzeń z dziedziny Internet of Things. Posiada zaimplementowane już rozwiązania między innymi na Arduino.   Wystarczy wykorzystać kod udostępniony przez twórców na stronie i wdrożyć go w swoim rozwiązaniu. System informował nas drogą mailową gdy wilgotność gleby spadała poniżej 10%. Na załączonym wykresie [x] można zaobserwować tę zależność. 
 \section{Budowa własnego systemu monitoringu}
 
 Wygodny nadzór nad domem podczas nieobecności do niedawna kojarzył się z czymś ekskluzywnym. Powszechnie monitoring znajdował się jedynie w bogatych domach. Jednak z tak szybkim postępem technologicznym na tego typu luksusy może pozwolić sobie niemalże każdy, praktycznie zerowym kosztem. Większość ludzi posiada jakiś stary, nieużywany telefon komórkowy z aparatem. Można go wykorzystać jako kamerę IP, dostępną w sieci lokalnej domu. Specjalne oprogramowanie będzie przesyłać obraz z dobrze umiejscowionego telefonu do serwera. To może być dowolne urządzenie, jednak na potrzeby naszego eksperymentu będzie nazywany serwerem. W naszym przypadku użyliśmy 2 aparatów i laptopa~\cite{Learning}.
