@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  13 JUN 2016 10:19
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  13 JUN 2016 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -750,7 +750,11 @@ File: images/w.jpg Graphic file (type QTm)
 File: images/o.png Graphic file (type QTm)
  <use  "images/o.png" > [10] [11]
 File: images/m_percent.jpg Graphic file (type QTm)
- <use  "images/m_percent.jpg" > [12] [13]
+ <use  "images/m_percent.jpg" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13]
 Rozdział 2.
 [14
 
@@ -817,12 +821,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
- 21566 strings out of 493591
- 390528 string characters out of 6143547
- 424852 words of memory out of 5000000
- 24786 multiletter control sequences out of 15000+600000
+ 21567 strings out of 493591
+ 390537 string characters out of 6143547
+ 424882 words of memory out of 5000000
+ 24787 multiletter control sequences out of 15000+600000
  7881 words of font info for 56 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,12n,65p,10410b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,65p,10410b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.pdf (35 pages).
