@@ -256,16 +256,48 @@ Niskie tempo odświeżania rekompensuje fakt, iż możemy podłączyć wiele kam
 
 \section{Budowa inteligetnego oswietlenia}
 
-Budowa systemu oświetlenia, miała na celu znaczące obniżenie kosztów energii elektrycznej oraz prostotę i użyteczność które to wspierałyby nasze \emph{wrodzone lenistwo}, we wszystkich pokojach w całym mieszkaniu wliczając łazienkę i  korytarz. Jak mawiał klasyk, \emph{"Do zrobienia rzeczy trudnej wybrałbym osobę leniwą, gdyż taka to właśnie osoba znajdzie najprostszy sposób na wykonanie tego} \cite{gates}. W myśl owej zasady, postanowiliśmy kontrolować oświetleniem za pomocą specjalnych sterowników WiFi sprzęgniętych z aplikacją na smartfony/tablety oraz zdalnego kontrolera RGB, aby móc kontrolować oświetleniem w całym domu za naciśnięciem jednego \emph{kciuka}. Źródłem światła w tym przypadku postanowiliśmy użyć wydajnych i energooszczędnych taśm LED'owych opartych o najnowsze diody 5760 oraz w przypadku pokoju dla młodzieży taśm z diodami 5050 RGB. W połączeniu z wyżej wymienionymi sterownikami WiFi będą duszą naszego projektu. Całość będzie sterowana zdalnie z dwu źródeł, sensorycznego kontrolera zdalnego rys oraz/i aplikacji zainstalowanej na smartfonie rys . Niestety nie obyło się bez problemów \emph{"wieku niemowlęcego"} projektu, gdyż inicjalnie mieliśmy bazować na sterownikach firmy \emph{"Milight} które niestety nie sa pozbawione wad... Jednakże po dłuższych poszukiwaniach dobraliśmy sterowniki firmy \emph{"Fancy Lighting"}, które to spełniały założenia projektowe naszego rozwiązania. Tradycyjnie w celu obniżenia kosztów przedsięwzięcia wszystkie komponenty zostały zakupione u źródła najtańszej produkcji światowej czyli w Chinach na portalu \emph{Aliexpress.com}.
+Budowa systemu oświetlenia, miała na celu znaczące obniżenie kosztów energii elektrycznej oraz prostotę i użyteczność które to wspierałyby nasze \emph{wrodzone lenistwo}. We wszystkich pokojach w całym mieszkaniu wliczając łazienkę i  korytarz. Jak mawiał klasyk, \emph{"Do zrobienia rzeczy trudnej wybrałbym osobę leniwą, gdyż taka to właśnie osoba znajdzie najprostszy sposób aby to wykonać} \cite{gates}. W myśl owej zasady, postanowiliśmy kontrolować oświetleniem za pomocą specjalnych sterowników WiFi sprzęgniętych z aplikacją na smartfony/tablety oraz zdalnego kontrolera RGB, aby móc kontrolować oświetleniem w całym domu za naciśnięciem jednego \emph{kciuka}. 
+Źródłem światła w tym przypadku postanowiliśmy użyć wydajnych i energooszczędnych taśm LED'owych opartych o najnowsze diody 5760 oraz w przypadku pokoju dla młodzieży taśm z diodami 5050 RGB. W połączeniu z wyżej wymienionymi sterownikami WiFi będą duszą naszego projektu. Całość będzie sterowana zdalnie z dwu źródeł, sensorycznego kontrolera zdalnego rys \ref{fig:led1}, \ref{fig:led2}, \ref{fig:led3} oraz/i aplikacji zainstalowanej na smartfonie rys . 
+\begin{figure}[h]
+\centering
+\includegraphics[width=4cm]{magic}
+\caption{Aplikacja MagicHome . Opracowanie własne.}
+\label{fig:magic}
+\end{figure}
+Niestety nie obyło się bez problemów \emph{"wieku niemowlęcego"} projektu, gdyż inicjalnie mieliśmy bazować na sterownikach firmy \emph{"Milight} które niestety nie sa pozbawione wad... Jednakże po dłuższych poszukiwaniach dobraliśmy sterowniki firmy \emph{"Fancy Lighting"}, które to spełniały założenia projektowe naszego rozwiązania. Tradycyjnie w celu obniżenia kosztów przedsięwzięcia wszystkie komponenty zostały zakupione u źródła najtańszej produkcji światowej czyli w Chinach na portalu \emph{Aliexpress.com}.
 W skład wszyskich potrzebnych do budowy zdalnego sterowania oświetleniem komponentów wchodzą:
 \begin{itemize}
 	\item Taśmy LED'owe \emph{Warm yellow light} oraz \emph{RGB} 8 taśm po 5m każda -> 30\$
 	\item sterowniki WiFi szt. 5 -> 50\$
 	\item zasilacze 220V->12V -> 20\$ 
 	\item kontroler (pilot) oświetlenia RGB -> 8\$
-	\item aplikacja \emph{MagicHome} -> 0\$ aplikacja jest darmowa!
+	\item aplikacja \emph{MagicHome} rys \ref{fig:magic} -> 0\$ aplikacja jest darmowa!
 \end{itemize}
 
+Największymi możliwościami jednak dysponuje sterownik WiFi \emph{"Fancy Lighting"} gdyż pozwala nam na uruchomienie zaprogramowanej przez nas symulacji "pobytu" podczas naszej nieobecności. Jest to skrypt który możemy uruchomić podczas naszego wyjazdu i każdego wieczoru będzie o zmierzchu zapalał i gasił światła w zdefiniowanych wcześniej grupach \emph{"duzy pokój", "mały pokój", "kuchnia", etc.} co pozwoli na zmylenie potencjalnych włamywaczy obserwujących nasze mieszkanie.
+
+System posiada również tzw. \emph{party mode} czyli wbudowany system mikrofonów i podczas puszczania muzyki możemy dla przykładu zamienić duży pokój w salę taneczną z piękną iluminacją świetlną która reaguje na puszczane dźwięki.
+
+Jak widać na przedstawionym zestawieniu powyżej, zestaw nie jest rażąco drogi oraz w wersji podstawowej funkcjonalności jakoś mocno skomplikowany do wdrożenia, jeśli natomiast będziemy chcieli zaimplementować więcej funkcjonalności to w tym momencie ogranicza nas tylko nasza wyobraźnia.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{led1}
+\caption{Oświetlenie RGB oparte o kontroler . Opracowanie własne.}
+\label{fig:led1}
+\end{figure} 
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{led2}
+\caption{Oświetlenie RGB oparte o kontroler . Opracowanie własne.}
+\label{fig:led2}
+\end{figure} 
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{led3}
+\caption{Oświetlenie RGB oparte o kontroler . Opracowanie własne.}
+\label{fig:led3}
+\end{figure}
 
 
 % zakończenie
