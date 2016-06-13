@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  13 JUN 2016 16:42
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  13 JUN 2016 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,8 +789,11 @@ File: images/led1.jpg Graphic file (type QTm)
  <use  "images/led1.jpg" >
 File: images/led2.jpg Graphic file (type QTm)
  <use  "images/led2.jpg" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: images/led3.jpg Graphic file (type QTm)
- <use  "images/led3.jpg" >
+<use  "images/led3.jpg" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
