@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  13 JUN 2016 21:46
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.8)  14 JUN 2016 08:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,11 +601,7 @@ Package polyglossia Info: Default language is polish.
 * OpenType feature 'Numbers=OldStyle' (+onum) not available for font 'Arial'
 * with script 'Latin' and language 'Default'.
 *************************************************
-(/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.aux
-
-LaTeX Warning: Label `fig:iot' multiply defined.
-
-)
+(/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.aux)
 \openout1 = `magisterka.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -714,6 +710,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 ) [1
 
+
 ] [2
 
 ] [3] [4] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.toc
@@ -731,21 +728,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-File: images/iot_wstep.png Graphic file (type QTm)
- <use  "images/iot_wstep.png" > [6
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [7] [8]
+ [6
+
+] [7]
 Rozdział 1.
 File: images/w.jpg Graphic file (type QTm)
-<use  "images/w.jpg" > [9
+<use  "images/w.jpg" > [8
 
 ]
 File: images/o.png Graphic file (type QTm)
- <use  "images/o.png" > [10] [11]
+ <use  "images/o.png" > [9
+
+]
 File: images/m_percent.jpg Graphic file (type QTm)
- <use  "images/m_percent.jpg" > [12] [13]
+ <use  "images/m_percent.jpg" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11] [12]
 Rozdział 2.
-[14
+[13
 
 ]
 File: images/m_exp.png Graphic file (type QTm)
@@ -753,24 +760,24 @@ File: images/m_exp.png Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[14]
+Underfull \vbox (badness 2951) has occurred while \output is active []
 
- [17] [18] [19] [20] [21]
+ [15] [16] [17] [18] [19]
 Rozdział 3.
-[22
+[20
 
-] [23] [24] [25]
+] [21] [22]
 File: images/pawel_wykres.png Graphic file (type QTm)
- <use  "images/pawel_wykres.png" > [26] [27]
+ <use  "images/pawel_wykres.png" > [23] [24]
 File: images/m_cam.png Graphic file (type QTm)
- <use  "images/m_cam.png" > [28]
+ <use  "images/m_cam.png" > [25] [26]
 File: images/magic.jpg Graphic file (type QTm)
  <use  "images/magic.jpg" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30]
+[27] [28]
 File: images/led1.jpg Graphic file (type QTm)
  <use  "images/led1.jpg" >
 File: images/led2.jpg Graphic file (type QTm)
@@ -783,45 +790,36 @@ File: images/led3.jpg Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.bbl
+[29] [30] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33
+ [31
 
-] [34] [35
+] [32] [33
 
-]) [36] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.lof
-Overfull \hbox (8.12976pt too wide) in paragraph at lines 2--2
- [][] [][][]\EU1/Arial(0)/m/n/12 IoT, źródło: http://knowledge-cess.com/category/technical/iot- 
- []
-
-)
+]) [34] (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.lof)
 \tf@lof=\write5
 \openout5 = `magisterka.lof'.
 
- [37
+ [35
 
-] [38
+] [36
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 285.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
  (/Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 316.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 285.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 285.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
  ) 
 Here is how much of TeX's memory you used:
- 21539 strings out of 493591
- 389784 string characters out of 6143547
- 425115 words of memory out of 5000000
- 24760 multiletter control sequences out of 15000+600000
+ 21536 strings out of 493591
+ 389740 string characters out of 6143547
+ 449044 words of memory out of 5000000
+ 24758 multiletter control sequences out of 15000+600000
  7873 words of font info for 55 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,12n,65p,10410b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,65p,10410b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.pdf (38 pages).
+Output written on /Users/luis/ownCloud/Studia informatyka UG/VI sem/seminarium licencjackie/github_clone_licencjat/.texpadtmp/magisterka.pdf (36 pages).
