@@ -66,8 +66,10 @@
 \introduction
 	Internet jest znany na całym świecie, przeciętnemu użytkownikowi kojarzy się on z~siecią komputerów, które są ze sobą połączone. Dziś internet oznacza dużo więcej niż tylko komputery, przy których siedzą ludzie. Coraz częściej to również urządzenia i~maszyny, z~których każdy na co dzień korzysta. Takie połączenia miliardów różnych czujników, komputerów i~innych urządzeń jest dużą zmianą w~życiu nas wszystkich, dlatego też często mówi się o~tym jako o~kolejnej rewolucji internetowej.
 	Termin \emph{„Internet rzeczy”} z~ang. \emph{„Internet of Things”}, w~skrócie \emph{IoT}, to koncepcja stworzona przez \emph{Kevina Ashtona} podczas prezentacji przygotowanej dla \emph{Procter \& Gamble} w~1999 roku \cite{KA:2009:iot}. Można ją tłumaczyć na wiele różnych sposobów, natomiast najlepiej określa się ją jako ekosystem, w~którym przedmioty, dzięki wyposażeniu w~sensory, komunikują się z~komputerami. Dla wielu ludzi to nadal coś niewyobrażalnego, ale niedługo w~jedną sieć będzie połączone ze sobą praktycznie wszystko. Wiele nowych możliwości staje otworem dla ludzi, którzy zajmują się marketingiem i~komunikacją, lecz nie tylko. 
+	
 	Tematem naszej pracy jest przybliżenie ideologii \emph{Inteligentnego Domu} z~wykorzystaniem \emph{Internet of Things}. Cel jaki obraliśmy to przybliżenie w/w tematyki i~obalenie mitu, głoszącego iż rozwiązania muszą być kosztowne i~skomplikowane do zaimplementowania. Inteligentny Dom to określenie, które mówi o~bardzo zaawansowanym technicznie budynku. Nie zawsze jest to budynek mieszkalny, mogą to być także  biura, firmy czy hale produkcyjne. 
 	Inteligentny budynek charakteryzuje się posiadaniem dużej ilości detektorów i~czujników, zamieszczonych w~ścianach, podłodze czy przy suficie. Wszystkie instalacje, połączone ze sobą, tworzą jeden zintegrowany system zarządzania budynku. Systemy te pozwalają na to, aby budynek mógł reagować na zmiany środowiska. Wszystkie te działania maksymalizują komfort użytkowania, funkcjonalność oraz bezpieczeństwo. Dzięki nim możemy także zaoszczędzić energię czy wodę, zmniejszają w ten sposób koszty eksploatacji, a~także pozwalają na zmniejszenie emisji zanieczyszczeń do środowiska. 
+	
 	Inspiracją do pochylenia się nad przedstawionym zagadnieniem był projekt, na który wpadł mój kolega parę lat temu (\emph{www.windfreaks.pl}), który miał wspierać naszą pasję, jaką jest kiteboarding, poprzez budowę kilku stacji pogodowych oraz kamer HD rozciągniętych wzdłuż wybrzeża zatoki Gdańskiej oraz półwyspu Helskiego. Miało to na celu dostarczanie rzetelnych danych pogodowych. Jednym z~głównych źródeł była książka Michaela Millera pt. „The Internet of Things: How Smart TVs, Smart Cars, Smart Homes, and Smart Cities Are Changing the World” \cite{MM:2015:TIOT}. W~przygotowaniu pracy ważną rolę odegrał raport „Internet Rzeczy w~Polsce” \cite{RP:2015:IOTPL} oraz książka „Internet rzeczy, Bezpieczeństwo w~Smart City”, wydawnictwa C.H. Beck \cite{beck}. 
 	Praca składa się ze wstępu, trzech rozdziałów merytorycznych oraz podsumowania. Wstęp zawiera ogólny opis problematyki pracy i~celów w~niej postawionych. Pierwszy rozdział to bardziej szczegółowy opis terminu \emph{„Internet of Things”}, warunki jego istnienia oraz jego korzyści i~wyzwania prywatności w~Internecie Rzeczy. Drugi rozdział to zagłębienie się w~temat warunków i~idei rozwoju \emph{IoT} oraz zagrożeń zeń płynących. W~trzecim rozdziale opisane zostały rozwiązania praktyczne w~oparciu o~solucje dostępne na rynku oraz trzy projekty naszego autorstwa podzielone na systemy:
 \begin{itemize}
@@ -82,7 +84,7 @@
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{w}
-\caption{Ilość urządzeń IoT , źródło: Gartner, listopad 2014r.}
+\caption{Ilość urządzeń IoT, źródło: Gartner, listopad 2014r.}
 \label{fig:ilosciot}
 \end{figure}
 \clearpage
@@ -221,9 +223,9 @@
 
 	Niskie tempo odświeżania rekompensuje fakt, iż możemy podłączyć wiele kamer i~mieć odczyt na żywo z~każdej z~nich. w~naszym przypadku całkowicie zerowym kosztem stworzyliśmy system nadzoru domu, do którego można się zalogować. Do zabezpieczenia aplikacji użyliśmy standardowej autoryzacji poprzez HTTP, której obsługę do Meteora dodaliśmy przy pomocy modułu Jabbslad/basic-auth.
 
-\section{Budowa inteligetnego oswietlenia}
+\section{Budowa inteligetnego oświetlenia}
 
-	Budowa systemu oświetlenia, miała na celu znaczące obniżenie kosztów energii elektrycznej oraz prostotę i~użyteczność które to wspierałyby nasze \emph{wrodzone lenistwo}. We wszystkich pokojach w~całym mieszkaniu wliczając łazienkę i~ korytarz. Jak mawiał klasyk, \emph{"Do zrobienia rzeczy trudnej wybrałbym osobę leniwą, gdyż taka to właśnie osoba znajdzie najprostszy sposób aby to wykonać} \cite{gates}. w~myśl owej zasady, postanowiliśmy kontrolować oświetleniem za pomocą specjalnych sterowników WiFi sprzęgniętych z~aplikacją na smartfony/tablety oraz zdalnego kontrolera RGB, aby móc kontrolować oświetleniem w~całym domu za naciśnięciem jednego \emph{kciuka}. 
+	Budowa systemu oświetlenia, miała na celu znaczące obniżenie kosztów energii elektrycznej oraz prostotę i~użyteczność które to wspierałyby nasze \emph{wrodzone lenistwo}. We wszystkich pokojach w~całym mieszkaniu wliczając łazienkę i~korytarz. Jak mawiał klasyk, \emph{"Do zrobienia rzeczy trudnej wybrałbym osobę leniwą, gdyż taka to właśnie osoba znajdzie najprostszy sposób aby to wykonać} \cite{gates}. w~myśl owej zasady, postanowiliśmy kontrolować oświetleniem za pomocą specjalnych sterowników WiFi sprzęgniętych z~aplikacją na smartfony/tablety oraz zdalnego kontrolera RGB, aby móc kontrolować oświetleniem w~całym domu za naciśnięciem jednego \emph{kciuka}. 
 	Źródłem światła w~tym przypadku postanowiliśmy użyć wydajnych i~energooszczędnych taśm LED'owych opartych o~najnowsze diody 5760 oraz w~przypadku pokoju dla młodzieży taśm z~diodami 5050 RGB. w~połączeniu z~wyżej wymienionymi sterownikami WiFi będą duszą naszego projektu. Całość będzie sterowana zdalnie z~dwu źródeł, sensorycznego kontrolera zdalnego rys \ref{fig:led1}, \ref{fig:led2}, \ref{fig:led3} oraz/i aplikacji zainstalowanej na smartfonie rys . 
 \begin{figure}[h]
 \centering
@@ -269,11 +271,14 @@
 
 % zakończenie
 \summary
-	Stworzenie systemu monitoringu pozwoliło nam lepiej poznać Node.js oraz samego Meteora. Pomimo, że aplikacja jest bardzo prosta w~założeniach poświęciliśmy mnóstwo czasu na szukanie informacji w~internecie jak rozwiązywać kolejno napotykane problemy. Jednak takie udogodnienia niosą za sobą spore ryzyko. o~ile my naszą aplikację zabezpieczyliśmy najprostszym i~najskuteczniejszym sposobem, być może w~przyszłości będziemy chcieli prowadzić logowanie wielu użytkowników co może otworzyć furtkę dla hakera. Jednak z~drugiej strony warto korzystać z~technologii aby ułatwić sobie życie w~każdym możliwym aspekcie. 
+	Nasz system monitoringu w~założeniach jest bardzo prosty. Jednak poświęciliśmy mnóstwo czasu na szukanie informacji w~internecie jak rozwiązywać kolejno napotykane problemy. Aczkolwiek takie udogodnienia niosą za sobą spore ryzyko. O~ile my naszą aplikację zabezpieczyliśmy najprostszym i~najskuteczniejszym sposobem, być może w~przyszłości będziemy chcieli prowadzić logowanie wielu użytkowników co może otworzyć lukę dla hakera. Z~drugiej strony warto korzystać z~technologii aby ułatwić sobie życie w~każdym możliwym aspekcie. 
 	Uważamy, że wybrane do tej części projektu technologie idealnie sprawdzają się do naszych zastosowań. Node.js jest bardzo szybki w~porównaniu do starszych technologii i~idealnie sprawdza się w~naszym zastosowaniu.
+	
 	Zbudowanie od podstaw systemu inteligentnego nawadniania roślin pozwoliło nam poznać lepiej zasady działania sensorów w~rozwiązaniach Internet of Things. Utwierdziliśmy się w~przekonaniu, że rozwiązania inteligentnych przedmiotów wcale nie muszą być drogie. Nie są też trudne w~budowie. w~internecie jest dużo poradników i~materiałów na temat różnych projektów, dzięki którym bez problemu możemy zbudować podobne systemy u~siebie w~domu. 
+	
 	Wprowadzenie powiadomień mailowych znacznie ułatwiło nam wyhodowanie rośliny, ale po zagłębieniu się w~temat internetu rzeczy zrozumieliśmy, że nie chodzi o~to by przedmioty były tylko podłączone do sieci. Cała idea polega na tym by rzeczy zaczęły same wykonywać niektóre czynności. Dlatego w~przyszłości zamierzamy dodać funkcjonalność która sprawi, że nasz projekt stanie się prawdziwym inteligentnym systemem. Mamy w~planach dodanie silniczka - małej pompy wodnej która będzie automatycznie podlewać rośliny. Dzięki temu ograniczymy naszą aktywność, tylko do uzupełniania pojemnika z~woda. 
-	Uważam, że wykorzystanie Arduino pozwoliło nam na zrozumieć jak działa większość rzeczy IoT. Dowiedzieliśmy się czym tak naprawdę są inteligentne rzeczy i~w jakim kierunku rozwija się ta dziedzina. Potrafimy spojrzeć na urządzenia z~innej strony i~łatwiej jest nam zrozumieć działania tych przedmiotów.
+	
+	Uważamy, że wykorzystanie Arduino pozwoliło nam na zrozumieć jak działa większość rzeczy IoT. Dowiedzieliśmy się czym tak naprawdę są inteligentne rzeczy i~w jakim kierunku rozwija się ta dziedzina. Potrafimy spojrzeć na urządzenia z~innej strony i~łatwiej jest nam zrozumieć działania tych przedmiotów.
 
 % załączniki (opcjonalnie):
 \appendix
