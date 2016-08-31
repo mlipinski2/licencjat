@@ -139,10 +139,9 @@
 \addcontentsline{toc}{chapter}{\SummaryName}}
 %
 \def\oswiadczenieText{%
-Ja, ni?ej podpisany(a) o?wiadczam, i? przed?o?ona praca 
-dyplomowa zosta?a wykonana przeze mnie samodzielnie, 
-nie narusza praw autorskich, interesów prawnych 
-i~materialnych innych osób.\endgraf }
+Ja, niżej podpisany, oświadczam, że przedłożona praca dyplomowa (będąca rezultatem pracy zespołu studentów) została przygotowana przeze mnie – w części, za którą odpowiadam - samodzielnie i nie narusza praw autorskich, interesów prawnych oraz materialnych innych osób.
+
+Ponadto oświadczam, że złożona wersja drukowana i elektroniczna niniejszej pracy licencjackiej są ze sobą zgodne.\endgraf }
 %
 \long\def\oswiadczenie{%%\newpage 
 \if@twocolumn \onecolumn \fi

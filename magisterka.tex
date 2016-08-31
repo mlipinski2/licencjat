@@ -44,7 +44,8 @@
 
 % streszczenie
 \begin{abstract}
-	Celem niniejszej pracy było udowodnienie, że idea Inteligentnego Domu już dawno przestała być czymś zarezerwowanym dla najbogatszych a~stała się czymś dużo bardziej przystępnym. Niewielkim lub czasem nawet zerowym kosztem można zaimplementować w~swoim domu rozwiązania, które w~znacznym stopniu ułatwią funkcjonowanie mieszkańcom. W~ramach niniejszej pracy stworzono kilka komponentów, które w~połączeniu tworzą solidną podstawę pod zbudowanie Inteligentnego Domu.
+	Celem niniejszej pracy było udowodnienie, że idea Inteligentnego Domu już dawno przestała być czymś zarezerwowanym dla najbogatszych a~stała się czymś dużo bardziej przystępnym. Niewielkim lub czasem nawet zerowym kosztem można zaimplementować w~swoim domu rozwiązania, które w~znacznym stopniu ułatwią funkcjonowanie mieszkańcom. 
+	W~ramach niniejszej pracy stworzono kilka komponentów, które w~połączeniu tworzą solidną podstawę pod zbudowanie Inteligentnego Domu.
 	
 	Pierwszym komponentem naszego „Inteligentnego Domu na każdą kieszeń” jest system monitoringu. Udało nam się przy pomocy 2 starych telefonów z~aparatem oraz laptopa stworzyć system nadzoru domowego. Przy pomocy framework'a \emph{Meteor} oraz modułu \emph{node-cam}, zabezpieczając wszystko modułem \emph{basic-auth} osiągnęliśmy zerowym kosztem system porównywalny z dostępnymi na rynku komercyjnymi rozwiązaniami.
 	
@@ -54,7 +55,7 @@
 	
 	Rozwój technologiczny postępuje w~zawrotnym tempie. Inteligentny Dom nie musi być drogi, a~nasze rozwiązania jeszcze bardziej utwierdziły nas w~tym przekonaniu.
 	
-	System składa się z trzech komponentów. System dynamicznego oświetlenia został skonstruowany przez Michała Lipińskiego, który oprócz opisów swojego rozwiązania oraz zakończenia jest autorem pierwszego rozdziału. Paweł Ponieważ był odpowiedzialny za zaprogramowanie czujników wilgotności gleby oraz dozowników wody oraz za napisanie drugiego rozdziału niniejszej pracy. System monitoringu został stworzony przez Mariusza Piątka, który jest autorem wstępu oraz trzeciego rozdziału.
+	System składa się z trzech komponentów. System dynamicznego oświetlenia został skonstruowany przez Michała Lipińskiego, który oprócz opisów swojego rozwiązania oraz zakończenia jest autorem pierwszego rozdziału. Paweł Ponieważ był odpowiedzialny za zaprogramowanie czujników wilgotności gleby oraz dozowników wody i za napisanie drugiego rozdziału niniejszej pracy. System monitoringu został stworzony przez Mariusza Piątka, który jest autorem wstępu oraz trzeciego rozdziału.
 \end{abstract}
 \clearpage
 % słowa kluczowe
@@ -64,7 +65,8 @@
 \maketitle
 % wstęp
 \introduction
-	Internet jest znany na całym świecie, przeciętnemu użytkownikowi kojarzy się on z~siecią komputerów, które są ze sobą połączone. Dziś internet oznacza dużo więcej niż tylko komputery, przy których siedzą ludzie. Coraz częściej to również urządzenia i~maszyny, z~których każdy na co dzień korzysta. Takie połączenia miliardów różnych czujników, komputerów i~innych urządzeń jest dużą zmianą w~życiu nas wszystkich, dlatego też często mówi się o~tym jako o~kolejnej rewolucji internetowej.
+	
+		Internet jest znany na całym świecie, przeciętnemu użytkownikowi kojarzy się on z~siecią komputerów, które są ze sobą połączone. Dziś internet oznacza dużo więcej niż tylko komputery, przy których siedzą ludzie. Coraz częściej to również urządzenia i~maszyny, z~których każdy na co dzień korzysta. Takie połączenia miliardów różnych czujników, komputerów i~innych urządzeń jest dużą zmianą w~życiu nas wszystkich, dlatego też często mówi się o~tym jako o~kolejnej rewolucji internetowej.
 	Termin \emph{„Internet rzeczy”} z~ang. \emph{„Internet of Things”}, w~skrócie \emph{IoT}, to koncepcja stworzona przez \emph{Kevina Ashtona} podczas prezentacji przygotowanej dla \emph{Procter \& Gamble} w~1999 roku \cite{KA:2009:iot}. Można ją tłumaczyć na wiele różnych sposobów, natomiast najlepiej określa się ją jako ekosystem, w~którym przedmioty, dzięki wyposażeniu w~sensory, komunikują się z~komputerami. Dla wielu ludzi to nadal coś niewyobrażalnego, ale niedługo w~jedną sieć będzie połączone ze sobą praktycznie wszystko. Wiele nowych możliwości staje otworem dla ludzi, którzy zajmują się marketingiem i~komunikacją, lecz nie tylko. 
 	
 	Tematem naszej pracy jest przybliżenie ideologii \emph{Inteligentnego Domu} z~wykorzystaniem \emph{Internet of Things}. Cel jaki obraliśmy to przybliżenie w/w tematyki i~obalenie mitu, głoszącego iż rozwiązania muszą być kosztowne i~skomplikowane do zaimplementowania. Inteligentny Dom to określenie, które mówi o~bardzo zaawansowanym technicznie budynku. Nie zawsze jest to budynek mieszkalny, mogą to być także  biura, firmy czy hale produkcyjne. 
@@ -250,19 +252,19 @@
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{led1}
-\caption{Oświetlenie RGB oparte o~kontroler . Opracowanie własne.}
+\caption{Oświetlenie RGB oparte o~kontroler. Przykladowy kolor 1. Opracowanie własne.}
 \label{fig:led1}
 \end{figure} 
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{led2}
-\caption{Oświetlenie RGB oparte o~kontroler . Opracowanie własne.}
+\caption{Oświetlenie RGB oparte o~kontroler. Przykladowy kolor 2. Opracowanie własne.}
 \label{fig:led2}
 \end{figure} 
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{led3}
-\caption{Oświetlenie RGB oparte o~kontroler . Opracowanie własne.}
+\caption{Oświetlenie RGB oparte o~kontroler. Przykladowy kolor 3. Opracowanie własne.}
 \label{fig:led3}
 \end{figure}
 
